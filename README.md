@@ -19,6 +19,6 @@ This repository provides an ensemble model to combine a YoloV8 model exported fr
 3.(Optional): Update the Score and NMS threshold in ```yolov8_onnx.py```   
 4.(Optional): Update the models/yolov8_onnx/config.pbtxt file if your input resolution has changed   
 5.Run Triton Inference Server:   
-    ```docker run --gpus=1 --rm --net=host -v ${PWD}/model_repository:/models nvcr.io/nvidia/tritonserver:24.08-py3 tritonserver --model-repository=/models```   
+    ```docker run --gpus=1 --rm --net=host -v ${PWD}/model_repository:/models nvcr.io/nvidia/tritonserver:24.07-py3 tritonserver --model-repository=/models```   
 6.Run Triton Inference client(install opencv-python before run):   
     ```python yolov8_onnx```    
